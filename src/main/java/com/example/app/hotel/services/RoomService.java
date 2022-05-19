@@ -29,10 +29,9 @@ public class RoomService {
 
     public String updateRoom(Room room, int id) {
         Room existingRoom = roomRepository.findById(id).orElse(null);
-        existingRoom.setType(room.getType());
-        existingRoom.setCount(room.getCount());
-        existingRoom.setPrice(room.getPrice());
+        existingRoom.setTitle(room.getTitle());
         existingRoom.setDescription(room.getDescription());
+        existingRoom.setPrice(room.getPrice());
         existingRoom.setImageURL(room.getImageURL());
         roomRepository.save(existingRoom);
         return "Room updated successfully";

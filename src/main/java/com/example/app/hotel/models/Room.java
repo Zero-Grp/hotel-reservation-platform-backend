@@ -16,10 +16,9 @@ public class Room {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    private String type;
-    private String count;
-    private String price;
+    private String title;
     private String description;
+    private String price;
     private String imageURL;
 
 }
