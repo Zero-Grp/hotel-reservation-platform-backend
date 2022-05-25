@@ -4,7 +4,6 @@ import lombok.*;
 
 import javax.persistence.*;
 import java.util.Date;
-import java.util.List;
 
 @Getter
 @Setter
@@ -22,5 +21,7 @@ public class Reservation {
     private Date endDate;
     private String status;
     private int amount;
+    private String customer;
+    private int room;
 
 }
